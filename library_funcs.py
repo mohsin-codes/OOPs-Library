@@ -1,12 +1,13 @@
 class Library:
-    def __init__(self, book_list, lib_name):
-        self.book_list = book_list
+    bookList = ['Chronicles of Narnia', 'Sherlock Holmes', 'Harry Potter', "The Handmaid's Tale", 'To kill a Mocking Bird']
+
+    def __init__(self, name):
         self.name = name
         self.lendDict = {}
 
-
-    def display_book(self):
-        pass
+    def display_book():
+        for book in bookList:
+            print(book)
 
     def lend_book(self, book, user):
         pass
@@ -18,4 +19,3 @@ class Library:
         pass
 
 
-gg
