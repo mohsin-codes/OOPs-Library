@@ -4,7 +4,7 @@ class user:
     def __init__(self, name):
         self.name = name
 
-    def menu_options(choice):
+    def menu_options(self, choice):
         if choice == 1:
             Library.display_book()
         elif choice == 2:
@@ -22,7 +22,7 @@ class user:
         print("3. Add a book")
         print("4. Return a book")
         choice = int(input("Enter your choice : "))
-        menu_options(choice)
+        self.menu_options(choice)
 
 
 name = input("Enter your name : ")

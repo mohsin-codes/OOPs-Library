@@ -6,8 +6,7 @@ class Library:
         self.lendDict = {}
 
     def display_book():
-        for book in bookList:
-            print(book)
+        print(bookList)
 
     def lend_book(self, book, user):
         pass
