@@ -6,13 +6,13 @@ class user:
 
     def menu_options(self, choice):
         if choice == 1:
-            Library.display_book()
+            self.display_book()
         elif choice == 2:
-            Library.lend_book()
+            self.lend_book()
         elif choice == 3:
-            Library.add_book()
+            self.add_book()
         elif choice == 4:
-            Library.return_book()
+            self.return_book()
     
     def menu(self):
         lib = Library(self.name)
@@ -22,7 +22,7 @@ class user:
         print("3. Add a book")
         print("4. Return a book")
         choice = int(input("Enter your choice : "))
-        self.menu_options(choice)
+        user.menu_options(lib, choice)
 
 
 name = input("Enter your name : ")
