@@ -30,9 +30,12 @@ class Library:
             main.user.continue_game(name)
 
     def add_book(self, book, name):
-        pass
+        self.bookList.append(book)
+        print(f"Thanks for adding the book to the Library {self.name}")
 
-    def return_book(self, user, name):
-        pass
+    def return_book(self, book, name):
+        popped_book = self.lendBook.pop(book)
+        self.bookList.append(popped_book)
+        print(f"{popped_book} is returned by {self.name}")
 
 

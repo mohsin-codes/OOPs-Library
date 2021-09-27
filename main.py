@@ -16,7 +16,8 @@ class user:
             self.lend_book(name)
         elif choice == 3:
             clear()
-            self.add_book(name)
+            book = input("Enter the book name : ")
+            self.add_book(book, name)
         elif choice == 4:
             clear()
             self.return_book(name)
